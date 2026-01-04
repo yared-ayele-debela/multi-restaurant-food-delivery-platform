@@ -1,0 +1,323 @@
+.fd-app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+
+.fd-brand {
+  font-weight: 600;
+  color: var(--text-h);
+  text-decoration: none;
+}
+
+.fd-brand:hover {
+  text-decoration: underline;
+}
+
+.fd-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fd-nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.fd-nav a:hover {
+  text-decoration: underline;
+}
+
+.fd-linkish {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: var(--accent);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.fd-main {
+  flex: 1;
+  padding: 1.5rem 1.25rem 2rem;
+  max-width: 52rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.fd-page h1 {
+  margin-top: 0;
+  color: var(--text-h);
+}
+
+.fd-lead {
+  font-size: 1.05rem;
+}
+
+.fd-muted {
+  color: var(--text);
+  opacity: 0.9;
+}
+
+.fd-narrow {
+  max-width: 22rem;
+}
+
+.fd-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.fd-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fd-field span {
+  font-size: 0.9rem;
+}
+
+.fd-field input {
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+.fd-primary {
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.fd-primary:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.fd-error {
+  color: #b91c1c;
+  margin: 0;
+}
+
+.fd-dl {
+  margin: 0;
+}
+
+.fd-dl > div {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  gap: 0.5rem 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.fd-dl dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.fd-dl dd {
+  margin: 0;
+}
+
+.fd-toolbar {
+  margin-bottom: 1rem;
+}
+
+.fd-input {
+  width: 100%;
+  max-width: 24rem;
+  padding: 0.45rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+  font: inherit;
+}
+
+textarea.fd-input {
+  max-width: none;
+  resize: vertical;
+}
+
+.fd-input-sm {
+  max-width: 5rem;
+}
+
+.fd-secondary {
+  padding: 0.45rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-h);
+  cursor: pointer;
+  font: inherit;
+}
+
+.fd-secondary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fd-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.fd-pagination {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.fd-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fd-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.fd-card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.fd-card-link:hover {
+  background: var(--accent-bg);
+}
+
+.fd-card-title {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.fd-card-meta {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.fd-section {
+  margin-top: 1.75rem;
+}
+
+.fd-section h2 {
+  font-size: 1.1rem;
+  color: var(--text-h);
+}
+
+.fd-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.fd-table th,
+.fd-table td {
+  border-bottom: 1px solid var(--border);
+  padding: 0.45rem 0.35rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.fd-timeline {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.fd-timeline li {
+  margin-bottom: 0.5rem;
+}
+
+.fd-timeline-status {
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.fd-pre {
+  white-space: pre-wrap;
+  font: inherit;
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--code-bg);
+}
+
+.fd-small {
+  font-size: 0.85rem;
+}
+
+.fd-checkout fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.fd-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.fd-radio {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.fd-addon-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.fd-btn-link {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fd-btn-link.fd-primary {
+  color: var(--accent);
+}
